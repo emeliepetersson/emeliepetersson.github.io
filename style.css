@@ -1,0 +1,49 @@
+body {
+    background-color: #FFFDF7;
+}
+header {
+    background-color: #F8F8EB;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.profile-picture {
+    width: 25%;
+    border-radius: 100%;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.331);
+}
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 5em;
+    padding-right: 20px;
+    color: white;
+    text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.331);
+}
+div {
+    height: 30px;
+    background-color: #D4DECD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+div a {
+    height: 50px;
+    transition: 0.3s ease-in;
+    padding: 5px 20px;
+}
+
+/*Social media icons*/
+.facebook:hover {
+    border-bottom: 7px double pink;
+}
+.instagram:hover {
+    border-bottom: 7px double rgb(164, 226, 228);
+}
+.linkedin:hover {
+    border-bottom: 7px double rgb(193, 233, 166);
+}
+.github:hover {
+    border-bottom: 7px double rgb(238, 208, 163);
+}
