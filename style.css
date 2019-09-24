@@ -35,6 +35,9 @@ header h1 {
     transition: 0.3s ease-in;
     padding: 5px 20px;
 }
+.icon-bar img {
+    transition: 1s ease;
+}
 .gif {
     position: absolute;
     bottom: 0;
@@ -61,14 +64,26 @@ p {
 .facebook:hover {
     border-bottom: 7px double pink;
 }
+.facebook-icon:hover {
+    transform: rotate(360deg);
+}
 .instagram:hover {
     border-bottom: 7px double rgb(164, 226, 228);
+}
+.instagram-icon:hover {
+    transform: rotate(360deg);
 }
 .linkedin:hover {
     border-bottom: 7px double rgb(193, 233, 166);
 }
+.linkedin-icon:hover {
+    transform: rotate(360deg);
+}
 .github:hover {
     border-bottom: 7px double rgb(238, 208, 163);
+}
+.github-icon:hover {
+    transform: rotate(360deg);
 }
 
 @media screen and (max-width: 790px){
