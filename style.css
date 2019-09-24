@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFDF7;
+    background-color: #FFF;
 }
 header {
     background-color: #F8F8EB;
@@ -7,6 +7,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.331);
 }
 .profile-picture {
     width: 25%;
@@ -20,20 +21,25 @@ h1 {
     color: white;
     text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.331);
 }
-div {
-    height: 30px;
+.icon-bar {
+    height: 25px;
     background-color: #D4DECD;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 40px 0;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.331);
 }
-div a {
+.icon-bar a {
     height: 50px;
     transition: 0.3s ease-in;
     padding: 5px 20px;
 }
-
+.gif {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+}
 /*Social media icons*/
 .facebook:hover {
     border-bottom: 7px double pink;
