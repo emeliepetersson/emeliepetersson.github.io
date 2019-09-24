@@ -14,7 +14,7 @@ header {
     border-radius: 100%;
     box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.331);
 }
-h1 {
+header h1 {
     font-family: 'Poiret One', cursive;
     font-size: 5em;
     padding-right: 20px;
@@ -40,6 +40,23 @@ h1 {
     bottom: 0;
     height: 250px;
 }
+main {
+    background-color: rgba(0, 0, 0, 0.048);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    right: 50px;
+    bottom: 5%;
+    width: 300px;
+    padding: 0 20px; 
+    border: 10px double rgb(170, 185, 159);
+}
+main h1 {
+    font-size: 2.5em;
+    color: rgb(51, 46, 46);
+}
+p {
+    font-size: 1.2em;
+}
 /*Social media icons*/
 .facebook:hover {
     border-bottom: 7px double pink;
@@ -52,4 +69,18 @@ h1 {
 }
 .github:hover {
     border-bottom: 7px double rgb(238, 208, 163);
+}
+
+@media screen and (max-width: 790px){
+    header {
+        display: block;
+        text-align: center;
+    }
+    main {
+        position: static;
+        margin: 0 auto;
+    }
+    .gif {
+        position: static;
+    }
 }
