@@ -1,4 +1,4 @@
 # EmeliePetersson
 
-Go visit my site at (https://emeliepetersson.github.io/)!
+Go visit my site at https://emeliepetersson.github.io/!
 
