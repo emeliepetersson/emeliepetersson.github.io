@@ -40,12 +40,6 @@ h1 {
     bottom: 0;
     height: 250px;
 }
-.gif2 {
-    position: absolute;
-    bottom: 0;
-    right:0;
-    height: 200px;
-}
 /*Social media icons*/
 .facebook:hover {
     border-bottom: 7px double pink;
