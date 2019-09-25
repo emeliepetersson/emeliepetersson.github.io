@@ -9,18 +9,22 @@ header {
     padding: 20px 0;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.331);
 }
+.name-logo {
+    width: 40%;
+    padding-right: 20px;
+}
 .profile-picture {
     width: 25%;
     border-radius: 100%;
     box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.331);
 }
-header h1 {
+/* header h1 {
     font-family: 'Poiret One', cursive;
     font-size: 5em;
     padding-right: 20px;
     color: white;
     text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.331);
-}
+} */
 .icon-bar {
     height: 25px;
     background-color: #D4DECD;
