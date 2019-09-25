@@ -18,13 +18,6 @@ header {
     border-radius: 100%;
     box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.331);
 }
-/* header h1 {
-    font-family: 'Poiret One', cursive;
-    font-size: 5em;
-    padding-right: 20px;
-    color: white;
-    text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.331);
-} */
 .icon-bar {
     height: 25px;
     background-color: #D4DECD;
@@ -90,10 +83,14 @@ p {
     transform: rotate(360deg);
 }
 
+/* Media queries */
 @media screen and (max-width: 790px){
     header {
         display: block;
         text-align: center;
+    }
+    .name-logo {
+        width: 80%;
     }
     main {
         position: static;
