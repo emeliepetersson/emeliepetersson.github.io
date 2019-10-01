@@ -2,25 +2,23 @@ body {
     background-color: #FFF;
 }
 header {
-    background-color: #F8F8EB;
+    height: 20em;
     display:flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.331);
 }
 .logo {
     width: 30%;
     padding-right: 50px;
 }
 .profile-picture {
-    width: 25%;
-    border-radius: 100%;
+    height: 20em;
     box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.331);
 }
 .icon-bar {
     height: 25px;
-    background-color: #D4DECD;
+    background-color: #7C5851;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +46,7 @@ main {
     bottom: 5%;
     width: 300px;
     padding: 0 20px; 
-    border: 10px double rgb(170, 185, 159);
+    border: 10px double #7C5851;
 }
 main h1 {
     font-size: 2.5em;
