@@ -2,7 +2,6 @@ body {
     background-color: #FFF;
 }
 header {
-    height: 20em;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +12,10 @@ h1 {
     font-size: 5em;
     padding-right: 50px;
     text-shadow: 5px 5px 8px black;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-name: opacity;
+    opacity: 0;
 }
 .profile-picture {
     height: 18em;
@@ -38,6 +41,7 @@ h1 {
     transition: 1s ease;
 }
 .gif {
+    display: inline-block;
     position: absolute;
     bottom: 0;
     height: 250px;
@@ -51,6 +55,9 @@ main {
     width: 300px;
     padding: 0 20px; 
     border: 10px double #7C5851;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: slide-in;
 }
 main h1 {
     font-family: 'Montserrat', sans-serif;
@@ -87,18 +94,33 @@ p {
     transform: rotate(360deg);
 }
 
+/* Animations */
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+    0% {
+        transform: translate(600px, 100px);
+    }
+    100% {
+        transform: translate(-100px, -20px);
+    }
+}
+
 /* Media queries */
-@media screen and (max-width: 790px){
-    header {
-        display: block;
-        text-align: center;
-    }
-    .name-logo {
-        width: 80%;
-    }
+@media screen and (max-width: 900px) {
     main {
         position: static;
         margin: 0 auto;
+        animation-name: none;
+    }
+    header {
+        flex-wrap: wrap;
     }
     .gif {
         position: static;
