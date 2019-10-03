@@ -122,6 +122,13 @@ p {
     header {
         flex-wrap: wrap;
     }
+    header h1 {
+        padding-right: 0;
+        text-align: center;
+    }
+    main h1 {
+        font-size: 2em;
+    }
     .gif {
         position: static;
     }
