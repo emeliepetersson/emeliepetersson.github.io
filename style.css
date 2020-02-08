@@ -1,135 +1,135 @@
 body {
-    background-color: #FFF;
+  background-color: #fff;
 }
 header {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 h1 {
-    font-family: 'Liu Jian Mao Cao';
-    font-size: 5em;
-    padding-right: 50px;
-    text-shadow: 5px 5px 8px black;
-    animation-fill-mode: forwards;
-    animation-duration: 5s;
-    animation-name: opacity;
-    opacity: 0;
+  font-family: "Liu Jian Mao Cao";
+  font-size: 5em;
+  padding-right: 50px;
+  text-shadow: 1px 1px 5px rgb(66, 65, 65);
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-name: opacity;
+  opacity: 0;
 }
 .profile-picture {
-    height: 18em;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.331);
-    padding: 12px;
-    border: 1px solid rgba(202, 199, 199, 0.705);
+  height: 18em;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.331);
+  padding: 12px;
+  border: 1px solid rgba(202, 199, 199, 0.705);
 }
 .icon-bar {
-    height: 25px;
-    background-color: #7C5851;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.331);
+  height: 25px;
+  background-color: #7c5851;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.331);
 }
 .icon-bar a {
-    height: 50px;
-    transition: 0.3s ease-in;
-    padding: 5px 20px;
+  height: 50px;
+  transition: 0.3s ease-in;
+  padding: 5px 20px;
 }
 .icon-bar img {
-    transition: 1s ease;
+  transition: 1s ease;
 }
 .gif {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    height: 250px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  height: 250px;
 }
 main {
-    background-color: rgba(0, 0, 0, 0.048);
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    right: 50px;
-    bottom: 5%;
-    width: 300px;
-    padding: 0 20px; 
-    border: 10px double #7C5851;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-name: slide-in;
+  background-color: rgba(0, 0, 0, 0.048);
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  right: 50px;
+  bottom: 5%;
+  width: 300px;
+  padding: 0 20px;
+  border: 10px double #7c5851;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-name: slide-in;
 }
 main h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    color: rgb(51, 46, 46);
-    text-shadow: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  color: rgb(51, 46, 46);
+  text-shadow: none;
 }
 p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 /*Social media icons*/
 .facebook:hover {
-    border-bottom: 7px double pink;
+  border-bottom: 7px double pink;
 }
 .facebook-icon:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .instagram:hover {
-    border-bottom: 7px double rgb(164, 226, 228);
+  border-bottom: 7px double rgb(164, 226, 228);
 }
 .instagram-icon:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .linkedin:hover {
-    border-bottom: 7px double rgb(193, 233, 166);
+  border-bottom: 7px double rgb(193, 233, 166);
 }
 .linkedin-icon:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .github:hover {
-    border-bottom: 7px double rgb(238, 208, 163);
+  border-bottom: 7px double rgb(238, 208, 163);
 }
 .github-icon:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 /* Animations */
 @keyframes opacity {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes slide-in {
-    0% {
-        transform: translate(600px, 100px);
-    }
-    100% {
-        transform: translate(-100px, -20px);
-    }
+  0% {
+    transform: translate(600px, 100px);
+  }
+  100% {
+    transform: translate(-100px, -20px);
+  }
 }
 
 /* Media queries */
 @media screen and (max-width: 900px) {
-    main {
-        position: static;
-        margin: 0 auto;
-        animation-name: none;
-    }
-    header {
-        flex-wrap: wrap;
-    }
-    header h1 {
-        padding-right: 0;
-        text-align: center;
-    }
-    main h1 {
-        font-size: 2em;
-    }
-    .gif {
-        position: static;
-    }
+  main {
+    position: static;
+    margin: 0 auto;
+    animation-name: none;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  header h1 {
+    padding-right: 0;
+    text-align: center;
+  }
+  main h1 {
+    font-size: 2em;
+  }
+  .gif {
+    position: static;
+  }
 }
