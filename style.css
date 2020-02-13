@@ -1,135 +1,330 @@
-body {
-  background-color: #fff;
-}
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-}
-h1 {
-  font-family: "Liu Jian Mao Cao";
-  font-size: 5em;
-  padding-right: 50px;
-  text-shadow: 1px 1px 5px rgb(66, 65, 65);
-  animation-fill-mode: forwards;
-  animation-duration: 5s;
-  animation-name: opacity;
-  opacity: 0;
-}
-.profile-picture {
-  height: 18em;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.331);
-  padding: 12px;
-  border: 1px solid rgba(202, 199, 199, 0.705);
-}
-.icon-bar {
-  height: 25px;
-  background-color: #7c5851;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.331);
-}
-.icon-bar a {
-  height: 50px;
-  transition: 0.3s ease-in;
-  padding: 5px 20px;
-}
-.icon-bar img {
-  transition: 1s ease;
-}
-.gif {
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  height: 250px;
-}
-main {
-  background-color: rgba(0, 0, 0, 0.048);
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  right: 50px;
-  bottom: 5%;
-  width: 300px;
-  padding: 0 20px;
-  border: 10px double #7c5851;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-name: slide-in;
-}
-main h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5em;
-  color: rgb(51, 46, 46);
-  text-shadow: none;
-}
-p {
-  font-size: 1.2em;
-}
-/*Social media icons*/
-.facebook:hover {
-  border-bottom: 7px double pink;
-}
-.facebook-icon:hover {
-  transform: rotate(360deg);
-}
-.instagram:hover {
-  border-bottom: 7px double rgb(164, 226, 228);
-}
-.instagram-icon:hover {
-  transform: rotate(360deg);
-}
-.linkedin:hover {
-  border-bottom: 7px double rgb(193, 233, 166);
-}
-.linkedin-icon:hover {
-  transform: rotate(360deg);
-}
-.github:hover {
-  border-bottom: 7px double rgb(238, 208, 163);
-}
-.github-icon:hover {
-  transform: rotate(360deg);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Animations */
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+body {
+  color: #ffffff;
+  font-family: "Gothic A1", sans-serif;
 }
-@keyframes slide-in {
+
+h1 {
+  color: rgb(32, 32, 32);
+  font-family: "Anton", sans-serif;
+  font-weight: lighter;
+  position: absolute;
+  right: 90px;
+  bottom: 90px;
+  min-width: 800px;
+  font-size: 130px;
+  z-index: 0;
+}
+h2 {
+  font-weight: lighter;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 40px;
+  width: 500px;
+  text-align: center;
+}
+h3 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+ul {
+  display: inline-block;
+}
+ul li {
+  list-style-type: none;
+  padding: 10px 0 0;
+}
+span {
+  font-weight: bolder;
+  color: #000000;
+  border-radius: 5px;
+  padding: 3px;
+}
+a {
+  color: rgb(203, 152, 219);
+}
+.span-green {
+  background-color: rgba(172, 231, 166, 0.7);
+}
+.span-yellow {
+  background-color: rgba(230, 231, 166, 0.7);
+}
+
+/* Background images */
+.parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+.first-parallax {
+  background-image: url("images/profile-pic.jpg");
+  height: 650px;
+}
+.second-parallax {
+  background-image: url("images/scubadiving.jpg");
+}
+.third-parallax {
+  background-image: url("images/skydiving.jpg");
+}
+
+/* Icons */
+.back {
+  display: none;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  top: 0;
+  left: 30px;
+  cursor: pointer;
+}
+.icons {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 70%;
+}
+.icon {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: top;
+  overflow: hidden;
+}
+.overlay p {
+  text-align: center;
+  color: rgb(137, 47, 165);
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px rgb(46, 46, 156);
+}
+.avatar {
+  background-image: url("icons/avatar.svg");
+}
+.education {
+  background-image: url("icons/education.svg");
+}
+.contact {
+  background-image: url("icons/contact.svg");
+}
+.overlay {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Icons hover effects */
+.overlay-education:hover {
+  background-color: rgba(172, 231, 166, 0.7);
+}
+.overlay-avatar:hover {
+  background-color: rgba(166, 229, 231, 0.7);
+}
+.overlay-contact:hover {
+  background-color: rgba(230, 231, 166, 0.7);
+}
+
+/* Content */
+.wrapper {
+  min-height: 500px;
+  background-color: rgb(32, 32, 32);
+  position: relative;
+  z-index: 1;
+  padding: 60px 0 80px;
+}
+.content {
+  display: none;
+}
+.display-flex {
+  display: flex;
+  justify-content: center;
+}
+.display-center {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Education - section */
+.display-center ul {
+  margin-bottom: 40px;
+  text-align: left;
+}
+.education-wrapper {
+  width: 30%;
+  margin-left: 30px;
+}
+.list-wrapper {
+  width: 500px;
+  display: flex;
+}
+.content div div p {
+  margin: 0 20px 20px;
+  max-width: 500px;
+}
+
+/* About me - section */
+.profile-picture {
+  margin-right: 30px;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border: 10px solid #ffffff;
+}
+.profile-picture img {
+  width: 100%;
+}
+
+/* The timeline */
+.timeline-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.timeline {
+  height: 450px;
+}
+
+/* Social medias icons */
+.social-medias a {
+  margin: 0 10px;
+}
+.social-medias img:hover {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+}
+
+/* Project section */
+.project-image-landscape {
+  width: 500px;
+}
+.project-image-portait {
+  width: 200px;
+  margin: 0 10px;
+}
+.project-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 50px auto;
+}
+.project-wrapper div {
+  width: 40%;
+}
+.project-wrapper h3 {
+  margin-bottom: 15px;
+}
+.project-wrapper p {
+  margin-bottom: 10px;
+}
+
+@keyframes rotate {
   0% {
-    transform: translate(600px, 100px);
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
   }
   100% {
-    transform: translate(-100px, -20px);
+    transform: rotate(-20deg);
   }
 }
 
-/* Media queries */
-@media screen and (max-width: 900px) {
-  main {
-    position: static;
-    margin: 0 auto;
-    animation-name: none;
+@media screen and (max-width: 400px) {
+  .first-parallax {
+    height: 500px;
   }
-  header {
-    flex-wrap: wrap;
+  h1 {
+    min-width: 100px;
+    font-size: 50px;
+    right: 0px;
+    bottom: 115px;
   }
-  header h1 {
-    padding-right: 0;
+  h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .display-flex {
+    display: block;
     text-align: center;
   }
-  main h1 {
-    font-size: 2em;
+
+  /* Icon */
+  .icons {
+    display: block;
   }
-  .gif {
-    position: static;
+  .icon {
+    margin: 0 auto 30px;
+    width: 300px;
+    height: 300px;
   }
+
+  /* About me - section */
+  .profile-picture {
+    margin: 0 auto 30px;
+  }
+  .display-center {
+    width: 100vw;
+  }
+
+  /* Education section */
+  .display-flex ul {
+    text-align: left;
+  }
+  .education-wrapper {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .list-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /* Timeline */
+  .timeline {
+    width: 100%;
+    height: 180px;
+  }
+
+  /*Project section */
+  .project-wrapper {
+    display: block;
+    text-align: center;
+  }
+  .project-wrapper div {
+    width: 100%;
+  }
+  .project-image-portait {
+    margin-bottom: 20px;
+  }
+  .project-image-landscape {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Use these classes to show and hide elements with js */
+.show {
+  display: initial;
+}
+.hide {
+  display: none;
 }

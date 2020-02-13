@@ -3,32 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Chilanka|Codystar|Comfortaa|Gayathri|Liu+Jian+Mao+Cao|Poiret+One|Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri|Montserrat|Raleway&display=swap" rel="stylesheet">
-    <title>Emelie Petersson</title>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <header>
-    <h1>Emelie Petersson</h1>
-    <img class="profile-picture" src="https://github.com/emeliepetersson.png" alt="profile picture">
-    </header>
+    
 
-    <nav class="icon-bar">
-        <a class="facebook" href="https://www.facebook.com/emelie.petersson.98"><img class="facebook-icon" src="https://img.icons8.com/ios/50/000000/facebook-new.png"></a>
-        <a class="instagram" href="https://www.instagram.com/emeliepeterssons/"><img class="instagram-icon" src="https://img.icons8.com/ios/50/000000/instagram-new.png"></a>
-        <a class="linkedin" href="https://www.linkedin.com/in/emelie-petersson-0672b4142/"><img class="linkedin-icon" src="https://img.icons8.com/ios/50/000000/linkedin.png"></a>
-        <a class="github" href="https://github.com/emeliepetersson"><img class="github-icon" src="https://img.icons8.com/ios/50/000000/github.png"></a>
-    </nav>
+    <section class="parallax first-parallax">
+        <h1>Emelie Petersson</h1>
+    </section>
+    
+    <section class="wrapper">
+        <img class="back" src="icons/back.svg" alt="go back icon" loading="lazy">
+        
+        <h2 id="icons-heading">Who am I?</h2>
 
-    <main>
-        <h1>Hello! I'm a..</h1>
-        <p>... web developer student and a fitness enthusiast. Feel free to contact or follow me on my social medias!</p>
-    </main>
+        <div class="icons">
+            <!-- Avatar icon -->
+            <div class="icon avatar">
+                <div class="overlay overlay-avatar">
+                    <p>Get to know me</p>
+                </div>
+            </div>
+      
+            <!-- Education icon -->
+            <div class="icon education">
+                <div class="overlay overlay-education">
+                    <p>My education</p>
+                </div>
+            </div>
 
-    <img class="gif" src="https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif" alt="cute fox">
+            <!-- Contact icon -->
+            <div class="icon contact">
+                <div class="overlay overlay-contact">
+                    <p>Contact</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content - About -->
+        <section class="content" id="about">
+            <h2>Hello!</h2>
+            <div class="display-flex">
+                <div  class="profile-picture">
+                    <img src="images/me.jpg" alt="profile picture" loading="lazy">
+                </div>
+                <div>
+                    <p>
+                        My name is Emelie. I'm 25 years old and currently studying the web developement program at Yrgo in Gothenburg. I'm doing my first year and I love it!
+                    </p>
+                    <p>
+                        My path to becoming a web developer student started when I was a teenager and had a blog that I loved to style with CSS. After I shut down my blog it took some years before I 
+                        decided to actually take a course in CSS, which I did 2018. After that I joined the information architecture program at
+                        Univeristy of Borås. I studied there for one year before I realized that my interest was fully in the web developement courses. Therefore I change direction and started the 
+                        web developement program at Yrgo instead.
+                    </p>
+                    <p>
+                        Besides my studies and interest in programming I'm very active - most of the time I'm at the gym lifting weights, otherwise I prefer to spend my time with my loved ones doing fun activities.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content - Education -->
+        <section class="content" id="education">
+            <h2>Education</h2>
+            <div class="display-flex">
+                <div class="education-wrapper">
+                    <h3>Yrgo, 2019-2021</h3>
+                    <div class="list-wrapper">
+                        <ul>
+                            <li><span class="span-green">Completed:</span></li>
+                            <li>SQL</li>
+                            <li>Design/Visual communication</li>
+                            <li>HTLM/CSS </li>
+                            <li><span class="span-green">Ongoing:</span></li>
+                            <li>C#</li>
+                            <li>PHP</li>
+                            <li>javascript</li>
+                            <li>Wordpress</li>
+                            <li>Project Management Methodologies</li>
+                        </ul>
+                        <ul>
+                            <li><span class="span-green">Upcoming:</span></li>
+                            <li>Animations</li>
+                            <li>React</li>
+                            <li>Laravel</li>
+                            <li>Node.js</li>
+                            <li>Umbraco</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="education-wrapper">
+                    <h3>University of Borås, 2018-2019</h3>
+                    <div class="list-wrapper">
+                        <ul>
+                            <li><span class="span-green">Completed:</span></li>
+                            <li>Graphic design and layout</li>
+                            <li>Web site development principles and practices:
+                                Background, scientific and methodological
+                                perspectives
+                            </li>
+                            <li>Content Management</li>
+                            <li>Image & Graphic Production</li>
+                            <li>Web Design Techniques</li>
+                            <li>Social Media</li>
+                            <li>Text Production 1</li>
+                            <li>Dynamic Web Applications 1 ­ Client Based
+                                Programming
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education-wrapper">
+                    <h3>University of Umeå, march 2018</h3>
+                    <div class="list-wrapper">
+                        <ul>
+                            <li><span class="span-green">Completed:</span></li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content - Contact -->
+        <section class="content" id="contact">
+            <h2>Contact</h2>
+            <div class="display-center">
+                <ul>
+                    <li><span class="span-yellow">Email:</span> peterssonemelie@hotmail.com</li>
+                    <li><span class="span-yellow">Phone:</span> +46700614116</li>
+                </ul>
+                <div class="social-medias">
+                    <a class="facebook" href="https://www.facebook.com/emelie.petersson.98"><img class="facebook-icon" src="icons/facebook.svg" alt="facebook icon" loading="lazy"></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/emelie-petersson-0672b4142/"><img class="linkedin-icon" src="icons/linkedin.svg" alt="linkedin icon" loading="lazy"></a>
+                    <a class="github" href="https://github.com/emeliepetersson"><img class="github-icon" src="icons/github.svg" alt="github icon" loading="lazy"></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <section class="parallax second-parallax"></section>
+
+    <section class="wrapper">
+        <h2>My timeline</h2>
+        <div class="timeline-wrapper">
+            <img class="timeline" src="images/timeline.png" alt="timeline" loading="lazy">
+        </div>
+    </section>
+    
+    <section class="parallax third-parallax"></section>
+
+    <section class="wrapper">
+        <h2>My projects</h2>
+
+        <div class="project-wrapper">
+            <div>
+                <h3>Picture this</h3>
+                <p>An instagram clone made with PHP, SQL, Javascript, CSS and HTML.</p>
+                <p>See the whole project at <a href="https://github.com/emeliepetersson/Picture-This">github.com/emeliepetersson/Picture-This</a></p>
+            </div>
+            <div>
+                <a href="https://github.com/emeliepetersson/Picture-This">
+                    <img class="project-image-portait" src="images/pt1.png" alt="screenshot of picture this app" loading="lazy">
+                </a>
+                <a href="https://github.com/emeliepetersson/Picture-This">
+                    <img class="project-image-portait" src="images/pt2.png" alt="screenshot of picture this app" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="project-wrapper">
+            <div>
+                <h3>Project Blackstar</h3>
+                <p>A landing page for a ficitve customer. Page is made with HTML, CSS and Javascript.</p>
+                <p>You can visit the page at <a href="https://project-blackstar13.netlify.com/">project-blackstar13.netlify.com</a></p>
+            </div>
+            <div>
+                <a href="https://project-blackstar13.netlify.com/">
+                    <img class="project-image-landscape" src="images/bs2.png" alt="screenshot of landing page" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="project-wrapper">
+            <div>
+                <h3>Memory game</h3>
+                <p>A memory game made with HTML, CSS and Javascript.</p>
+                <p>You can play the game at <a href="https://javascript-memory.netlify.com/">javascript-memory.netlify.com</a></p>
+            </div>
+            <div>
+                <a href="https://javascript-memory.netlify.com/">
+                    <img class="project-image-landscape" src="images/memory2.png" alt="screenshot of memory" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="project-wrapper">
+            <p>Visit my <a href="https://github.com/emeliepetersson">Github profile</a> to see all my projects!</p>
+        </div>
+    </section>
    
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
