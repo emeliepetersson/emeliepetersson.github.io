@@ -30,7 +30,6 @@ const goBack = event => {
 
   event.currentTarget.classList.remove("show");
   iconsWrapper.classList.remove("hide");
-  iconsHeading.classList.remove("hide");
 };
 
 icons.forEach(icon => {
