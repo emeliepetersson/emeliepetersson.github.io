@@ -5,20 +5,17 @@
 }
 
 body {
-  color: #ffffff;
+  color: #050505;
   font-family: "Gothic A1", sans-serif;
 }
 
 h1 {
-  color: rgb(32, 32, 32);
-  font-family: "Anton", sans-serif;
+  text-align: center;
   font-weight: lighter;
-  position: absolute;
-  right: 90px;
-  bottom: 90px;
-  min-width: 800px;
-  font-size: 130px;
-  z-index: 0;
+  font-family: "Raleway Dots", cursive;
+  font-size: 80px;
+  width: 100%;
+  margin: 0 auto 40px;
 }
 h2 {
   font-weight: lighter;
@@ -96,7 +93,7 @@ a {
 .icon {
   width: 300px;
   height: 300px;
-  background-color: white;
+  box-shadow: 2px 4px 20px rgb(223, 221, 221);
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: center;
@@ -144,7 +141,7 @@ a {
 /* Content */
 .wrapper {
   min-height: 500px;
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(255, 255, 255);
   position: relative;
   z-index: 1;
   padding: 60px 0 80px;

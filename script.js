@@ -3,7 +3,6 @@
 const iconsWrapper = document.querySelector(".icons");
 const icons = document.querySelectorAll(".icon");
 const back = document.querySelector(".back");
-const iconsHeading = document.querySelector("#icons-heading");
 const about = document.querySelector("#about");
 const education = document.querySelector("#education");
 const contact = document.querySelector("#contact");
@@ -20,7 +19,6 @@ const showMore = event => {
     contact.classList.add("show");
   }
 
-  iconsHeading.classList.add("hide");
   back.classList.add("show");
   iconsWrapper.classList.add("hide");
 };
