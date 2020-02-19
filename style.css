@@ -250,6 +250,16 @@ a {
   .first-parallax {
     height: 500px;
   }
+  .first-parallax {
+    background-image: url("images/mobile-profile-pic.jpg");
+    height: 650px;
+  }
+  .second-parallax {
+    background-image: url("images/mobile-scubadiving.jpg");
+  }
+  .third-parallax {
+    background-image: url("images/mobile-skydiving.jpg");
+  }
   h1 {
     min-width: 100px;
     font-size: 50px;
