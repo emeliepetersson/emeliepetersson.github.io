@@ -1,0 +1,19 @@
+backend:
+  name: emeliepetersson.github.io
+  branch: master 
+
+site_url: https://emeliepetersson.netlify.com/
+
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+# This line should *not* be indented
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+
+collections:
+  - name: "home" # Used in routes, e.g., /admin/collections/test
+    label: "home" # Used in the UI
+    files: "index.html" # The path to the folder where the documents are stored
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Body", name: "body", widget: "markdown"}
