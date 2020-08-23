@@ -30,3 +30,14 @@
 }
 
 
+@media screen and (max-width: 400px) {
+    .header {
+        background: linear-gradient(to bottom, $offBlack 0%, $purple 60%, $purple 100%);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
