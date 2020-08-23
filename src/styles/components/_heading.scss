@@ -1,0 +1,32 @@
+.header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, $offBlack 0%, $purple 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: avenir, sans-serif;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        max-width: 800px;
+        padding: 30px;
+        
+        span {
+            display: inline-block;
+            color: $pink;
+        }
+    
+        .smaller {
+            font-size: 0.9em;
+            color: $white;
+        }
+    }
+}
+
+

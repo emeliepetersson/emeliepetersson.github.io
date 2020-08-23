@@ -1,0 +1,49 @@
+.about-content{
+    position: relative;
+    
+    .about-me {
+        display: flex;
+
+        .profile-picture {
+            margin-right: 30px;
+            width: 40%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        } 
+        .text-content {
+            margin-top: 70px;
+            width: 70%;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .about-content{
+        .about-me {
+            display: block;
+            
+            .profile-picture {
+                margin: 50px auto 0;
+            }
+            .text-content {
+                width: 100%;
+                margin: 0 auto;
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

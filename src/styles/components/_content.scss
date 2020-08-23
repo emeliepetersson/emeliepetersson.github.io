@@ -1,0 +1,140 @@
+.content {
+    padding:100px 15%;
+
+    .color-box {
+        background-color: $purple;
+    }
+    .color-box::after {
+        content: "";
+        background-color: $purple;
+    }
+}
+.about-content{
+    background-color: $offBlack;
+    position: relative;
+    z-index: 2;
+    
+    .color-box {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 180px;
+        top: 80px;
+        border-radius: 150px 200px;
+        opacity: 0.8;
+        z-index: -10;
+    }
+    .color-box::after {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 190px;
+        top: 80px;
+        border-radius: 200px;
+        opacity: 0.8;
+    }
+}
+
+.project-content {
+    .color-box-first {
+        width: 450px;
+        height: 450px;
+        position: absolute;
+        right: 180px;
+        top: 350px;
+        border-radius: 300px 200px;
+        opacity: 0.8;
+        z-index: -10;
+    }
+    .color-box-first::after {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 250px;
+        top: 230px;
+        border-radius: 200px 250px;
+        opacity: 0.8;
+    }
+
+    .color-box-second {
+        width: 450px;
+        height: 450px;
+        position: absolute;
+        left: 100px;
+        bottom: 800px;
+        border-radius: 200px 300px;
+        opacity: 0.8;
+        z-index: -10;
+    }
+    .color-box-second::after {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 300px;
+        bottom: 80px;
+        border-radius: 200px 250px;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .content {
+        padding:100px 10%;
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .content {
+        padding:100px 5%;
+    }
+
+    .about-content{
+        .color-box {
+            width: 200px;
+            height: 200px;
+            left: 40px;
+            top: 80px;
+            border-radius: 100px 150px;
+        }
+        .color-box::after {
+            width: 150px;
+            height: 150px;
+            left: 90px;
+            top: 80px;
+            border-radius: 150px;
+        }
+    }
+
+    .project-content {
+        .color-box-first {
+            width: 200px;
+            height: 200px;
+            right: 20px;
+            top: 350px;
+            border-radius: 130px 100px;
+        }
+        .color-box-first::after {
+            width: 150px;
+            height: 150px;
+            right: 100px;
+            top: 60px;
+            border-radius: 120px 100px;
+        }
+    
+        .color-box-second {
+            width: 200px;
+            height: 200px;
+            left: 30px;
+            bottom: 1200px;
+            border-radius: 150px 200px;
+        }
+        .color-box-second::after {
+            width: 150px;
+            height: 150px;
+            left: 120px;
+            bottom: 0;
+            border-radius: 100px 130px;
+        }
+    }
+}

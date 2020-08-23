@@ -2,4 +2,6 @@
 
 import "../styles/index.scss";
 
-console.log("Hello World!");
+import Rellax from "rellax";
+
+var rellax = new Rellax(".rellax");

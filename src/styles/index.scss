@@ -1,60 +1,19 @@
 @import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import 'project/_project';
+@import 'components/_components';
 
-body {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, rgba(9,5,19,1) 0%, rgb(139, 68, 125) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-        color: white;
-        font-family: sans-serif;
-        font-weight: 500;
-    }
-
-    .stars {    
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        &:after, &:before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0; left: 0; bottom: 0; right: 0;
-            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQAQMAAAC6caSPAAAABlBMVEVHcEz///+flKJDAAAAAXRSTlMAQObYZgAAAIVJREFUeAHt2SEOwkAQhtFJKuqKRRGOgKzgUMgKRI/G0ZDoacNkN/ue/zJ+/ugBcI+01/EEAGBc04FkP58AVFoi7VaSLAEAAPB/j0hbK678AADMkXbZG03mGA0AAKsP3JgAAGDa88knsuZ8Mp1M6gEAPFtNrtEjtkh7lyRb3/PAWpS0BPgC0PMMdOEjXqoAAAAASUVORK5CYII=');
-        }
-        &:after {
-            background-size: 100px;
-            opacity: 0.6;
-            animation: blinkLighter 5s infinite ease-out, rotate-rew 1300s infinite linear;
-        }
-        &:before {
-            background-size: 200px;
-            opacity: 0.4;
-            animation: blink 5s infinite ease-out 2s, rotate 1300s infinite linear;
-        }
-    }
-    
-    @keyframes blink {
-        0% { opacity:  0.4; }
-        50% { opacity: 0.8; }
-        100% { opacity:  0.4; }
-    }
-    @keyframes blinkLighter {
-        0% { opacity:  0.6; }
-        50% { opacity: 1; }
-        100% { opacity:  0.6; }
-    }
-    @keyframes rotate {
-        0% { transform: rotate(0); }
-        100% { transform: rotate(360deg); }
-    }
-    @keyframes rotate-rew {
-        0% { transform: rotate(0); }
-        100% { transform: rotate(-360deg); }
-    }
+html {
+    background-color: $offBlack;
 }
-  
-  
-  
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $link;
+    word-break: break-word;
+}
