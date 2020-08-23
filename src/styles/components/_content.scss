@@ -61,7 +61,7 @@
         height: 450px;
         position: absolute;
         left: 100px;
-        bottom: 900px;
+        bottom: 1000px;
         border-radius: 200px 300px;
         opacity: 0.8;
         z-index: -10;
@@ -71,7 +71,7 @@
         height: 300px;
         position: absolute;
         left: 300px;
-        bottom: 90px;
+        bottom: 100px;
         border-radius: 200px 250px;
         opacity: 0.8;
     }
@@ -126,14 +126,14 @@
             width: 200px;
             height: 200px;
             left: 30px;
-            bottom: 1250px;
+            bottom: 1350px;
             border-radius: 150px 200px;
         }
         .color-box-second::after {
             width: 150px;
             height: 150px;
             left: 120px;
-            bottom: 20px;
+            bottom: 40px;
             border-radius: 100px 130px;
         }
     }
